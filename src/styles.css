@@ -1,0 +1,39 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+@import url('./css/header.css');
+@import url('./css/hero.css');
+@import url('./css/advantages.css');
+@import url('./css/unique-components.css');
+@import url('./css/how-made.css');
+@import url('./css/our-products.css');
+@import url('./css/top-sellers.css');
+@import url('./css/reviews.css');
+@import url('./css/subscribe.css');
+@import url('./css/footer.css');
+/*$$$$$$$$$$$$$$$$$$ modal  $$$$$$$$ */
+@import url('./css/modal-css/buy-now.css');
+@import url('./css/modal-css/thank-you.css');
+@import url('./css/modal-css/leave-a-review.css');
+@import url('./css/modal-css/thank-you-feedback.css');
+@import url('./css/modal-css/explore-our-new.css');
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
