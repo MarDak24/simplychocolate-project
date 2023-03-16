@@ -93,3 +93,7 @@ ul {
   opacity: 0;
   pointer-events: none;
 }
+.top-sellers-btt:hover {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
