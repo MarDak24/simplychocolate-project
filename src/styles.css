@@ -5,7 +5,7 @@
   |============================
 */
 @import url('./css/base.css');
-@import url('./reset.css');
+@import url('./css/reset.css');
 @import url('./css/header.css');
 @import url('./css/hero.css');
 @import url('./css/advantages.css');
@@ -17,9 +17,9 @@
 @import url('./css/subscribe.css');
 @import url('./css/footer.css');
 /*$$$$$$$$$$$$$$$$$$ modal  $$$$$$$$ */
+@import url('./css/modal-css/base-modal.css');
 @import url('./css/modal-css/buy-now.css');
 @import url('./css/modal-css/thank-you.css');
 @import url('./css/modal-css/leave-a-review.css');
 @import url('./css/modal-css/thank-you-feedback.css');
 @import url('./css/modal-css/explore-our-new.css');
-
