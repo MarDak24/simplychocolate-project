@@ -5,7 +5,7 @@
   |============================
 */
 @import url('./css/base.css');
-@import url('./reset.css');
+@import url('./css/reset.css');
 @import url('./css/header.css');
 @import url('./css/hero.css');
 @import url('./css/advantages.css');
