@@ -93,7 +93,33 @@ ul {
   opacity: 0;
   pointer-events: none;
 }
+.top-sellers-second-list {
+}
 .top-sellers-btt:hover {
   color: #fd9222;
   background-color: #fcf1e0;
+}
+@media screen and (min-width: 1200px) {
+  .top-sellers-list {
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    gap: 16px;
+  }
+  .top-sellers-second-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 780px) {
+}
+
+@media screen and (min-width: 480px) {
+  .top-sellers-second-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.top-sellers-second-list {
+  display: none;
 }
