@@ -6,13 +6,21 @@
       our finest ingredients for a moment of pure delight!
     </h2>
     <div class="hero-wrap">
-      <ul class="hero-list">
-        <li><button type="button" class="hero-btn buy-btn">Buy now</button></li>
-        <li>
-          <button type="button" class="hero-btn how-btn">How it’s made</button>
-        </li>
-      </ul>
-      <button type="button" class="hero-btn scroll-btn">scroll down</button>
+      <button
+        type="button"
+        class="hero-btn btn-open-buy-now js-open-modal"
+        data-modal="1"
+      >
+        Buy now
+      </button>
+
+      <a href="#howmade" class="how-btn hero-btn">How it’s made</a>
+      <a href="#footer" class="scroll-btn">
+        <span>scroll down</span>
+        <svg class="scroll-down-icon" width="28" height="28">
+          <use href="../img/SVG/symbol-defs.svg#icon-scroll"></use>
+        </svg>
+      </a>
     </div>
   </div>
 </section>
