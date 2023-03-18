@@ -2,18 +2,29 @@ ul {
   margin: 0;
   padding: 0;
 }
+img {
+  width: 100%;
+}
 .list-style-none {
   list-style: none;
 }
-@media screen and (min-width: 375px) {
-  .container {
-    max-width: 375px;
+@media screen and (max-width: 375px) {
+  .container-top-seller {
+    width: 100%;
+    max-width: 333px;
+    padding: 0 15px;
+    margin: 0 auto;
   }
   .first-div-top-seller {
     display: none;
   }
   .second-div-top-seller {
     display: flex;
+
+    justify-content: center;
+  }
+  .img-top-seller-second {
+    width: 335px;
   }
   .text-li-top-seller {
     max-width: 306px;
@@ -23,6 +34,9 @@ ul {
     line-height: 18px;
     letter-spacing: -0.02em;
     color: #111111;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    display: block;
   }
   .hero-text-top-seller {
     text-align: center;
@@ -42,23 +56,126 @@ ul {
   .hero-span-top-seller {
     color: #fd9222;
   }
+  .p-text-top-seller {
+    display: none;
+  }
+  .btt-div-top-seller {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btt-top-seller {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 41px;
+    background: #fd9222;
+    border-radius: 100px;
+    border: #fd9222;
+    color: #ffffff;
+  }
 }
-@media screen and (min-width: 768px) {
-  .container {
+@media screen and (min-width: 375px) {
+  .container-top-seller {
     width: 100%;
-    max-width: 766px;
+    max-width: 373px;
     padding: 0 15px;
     margin: 0 auto;
   }
   .first-div-top-seller {
-    display: flex;
+    display: none;
   }
   .second-div-top-seller {
+    display: flex;
+
+    justify-content: center;
+  }
+  .img-top-seller-second {
+    width: 335px;
+  }
+  .text-li-top-seller {
+    max-width: 306px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: #111111;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    display: block;
+  }
+  .hero-text-top-seller {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-align: center;
+    letter-spacing: -0.03em;
+  }
+  .btt-top-seller {
+  }
+  .btt-div-top-seller {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero-span-top-seller {
+    color: #fd9222;
+  }
+  .p-text-top-seller {
     display: none;
+  }
+  .btt-div-top-seller {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btt-top-seller {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 41px;
+    background: #fd9222;
+    border-radius: 100px;
+    border: #fd9222;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-top-seller {
+    width: 100%;
+    max-width: 726px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .p-text-top-seller {
+    display: inline;
+    max-width: 306px;
+  }
+  .text-li-top-seller {
+    display: none;
+  }
+  .second-list-top-seller {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 16px;
+  }
+  .btt-div-top-seller {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
+  .container-top-seller {
     width: 100%;
     max-width: 1158px;
     padding: 0 15px;
@@ -88,6 +205,7 @@ ul {
     line-height: calc(18 / 14);
     letter-spacing: -0.02em;
     color: #111111;
+    display: inline;
   }
   .hero-text-top-seller {
     text-align: center;
@@ -96,13 +214,15 @@ ul {
   .btt-top-seller {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     padding: 14px 40px;
     gap: 14px;
-    color: #ffffff;
+    width: 162px;
+    height: 50px;
+
     background: #fd9222;
     border-radius: 100px;
-    border: #fd9222;
+    color: #ffffff;
   }
   .btt-div-top-seller {
     display: flex;
