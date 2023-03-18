@@ -211,6 +211,7 @@ img {
     text-align: center;
     color: #111111;
   }
+
   .btt-top-seller {
     display: flex;
     flex-direction: row;
@@ -223,6 +224,11 @@ img {
     background: #fd9222;
     border-radius: 100px;
     color: #ffffff;
+  }
+  .btt-top-seller:hover,
+  .btt-top-seller:focus {
+    background: #fcf1e0;
+    color: #fd9222;
   }
   .btt-div-top-seller {
     display: flex;
