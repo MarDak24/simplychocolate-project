@@ -1,5 +1,5 @@
 .advantages-container {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     padding: 0px 16px;
 }
@@ -7,7 +7,6 @@
 .advantages-section {
     padding: 20px 0;
 
-    font-family: 'Montserrat';
     background-color: var(--dark-purple-color);
 }
 
@@ -39,7 +38,7 @@
 
 .advantages-text {
     max-width: 308px;
-    font-size: 14px;
+    
     line-height: calc(17 / 14);
     letter-spacing: -0.02em;
     color: rgba(255, 255, 255, 0.7);
@@ -48,7 +47,8 @@
 @media screen and (min-width: 375px) {
     
     .advantages-container {
-        max-width: 415px;
+        max-width: 375px;
+        padding: 0px 20px;
     }
 
     .advantages-item {
@@ -84,11 +84,7 @@
         max-width: 1200px;
         padding: 0 50px;
     }
-
-    .advantages-section {
-        padding: 50px 0;
-    }
-
+    
     .advantages-list {
         gap: 70px;
     }
