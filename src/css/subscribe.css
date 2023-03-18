@@ -6,7 +6,7 @@
 
 @media screen and (max-width: 767px) {
   .conteiner {
-    min-width: 356px;
+    max-width: 356px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
