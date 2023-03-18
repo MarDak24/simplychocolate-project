@@ -25,6 +25,7 @@
 <path fill="#fd9222" style="fill: var(--color1, #fd9222)" d="M15.451 14.106c-0.783-0.95-1.177-2.116-1.177-3.282 0-4.324 5.181-8.642 10.362-8.642 2.86 0 5.181 2.321 5.181 5.182 0 5.182-4.318 10.364-8.646 10.364-1.166 0-2.331-0.394-3.281-1.177l-12.758 12.761c-0.675 0.675-1.77 0.675-2.445 0s-0.675-1.771 0-2.445l12.764-12.761z"></path>
 </symbol>
  <symbol id="icon-x-close" viewBox="0 0 32 32">
+ 
       <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M24 8 8 24M8 8l16 16" style="stroke:var(--color1, #fff)"/>
     </symbol>
 <!-- $$$$$$$$$$$$  UNIQUE COMPONENTS $$$$$$$$$$$$$$$$$ -->
