@@ -175,7 +175,10 @@
 }
 
 /*_____________________________MODAL-WINDOW(NEW CHOCOLATE)________________________*/
-
+.subscribe-modal{
+  opacity: 0;
+  overflow: hidden;
+}
 @media screen and (max-width: 767px) {
   .subscribe-modal {
     top: 0;
