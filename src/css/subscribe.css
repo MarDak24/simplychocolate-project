@@ -176,7 +176,7 @@
 
 /*_____________________________MODAL-WINDOW(NEW CHOCOLATE)________________________*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .subscribe-modal {
     top: 0;
     left: 50%;

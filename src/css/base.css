@@ -3,11 +3,12 @@
   --orange-color: #fd9222;
   --dark-purple-color: #1e1823;
   --dark-color: #111111;
+  --background-body: #E2E2E2;
 }
 
 body {
   color: var(--dark-color);
-  background-color: var(--white-color);
+  background-color: var(--background-body);
 
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
