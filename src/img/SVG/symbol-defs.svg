@@ -79,7 +79,11 @@
 
 
 <!-- $$$$$$$$$$$$  MODAL_THANK-YOU $$$$$$$$$$$$$$$$$ -->
-
+<symbol id="icon-buy-thanks-close" viewBox="0 0 32 32">
+<path fill="#fcf1e0" style="fill: var(--color1, #fcf1e0)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="none" stroke="#F16529" style="stroke: var()" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7143" d="M20.571 11.429l-9.143 9.143"></path>
+<path fill="none" stroke="#F16529" style="stroke: var()" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7143" d="M11.429 11.429l9.143 9.143"></path>
+</symbol>
 
 
 <!-- $$$$$$$$$$$$  MODAL_THANK-YOU-FEEDBACK $$$$$$$$$$$$$$$$$ -->

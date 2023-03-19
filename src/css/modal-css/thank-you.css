@@ -1,0 +1,102 @@
+.thanks-buy-modal{
+
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+
+    width: 100%;
+    max-width: 311px;
+    padding-top: 84px;
+    padding-right:  24px;
+    padding-bottom:  170px;
+    padding-left:  68px;
+    border-radius: 15px;
+    background-color: #FD9222;
+    transition: 0.3s all;
+
+    background-image:url(../img/mobile/modal-thankYou/choco-mobile-1x.png);
+    background-repeat: no-repeat;
+    background-size: 296px, 399px;
+    background-position: left bottom;
+    }
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .thanks-buy-modal {
+            background-image: url(../img/mobile/modal-thankYou/choco-mobile-2x.png);
+        }
+    }
+
+
+.thanks-buy-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+}
+
+.thanks-buy-title{
+    display: inline-block;
+    margin-bottom: 8px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #FCF1E0;
+}
+
+.thanks-buy-text{
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+
+    .thanks-buy-modal {
+            max-width: 516px;
+
+    padding-top: 154px;
+        padding-right: 44px;
+        padding-bottom: 154px;
+        padding-left: 163px;
+
+    background-image: url(../img/desktop+tablet/modal-thankYou/choco-tablet-1x.png);
+    }
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .thanks-buy-modal {
+            background-image: url(../img/desktop+tablet/modal-thankYou/choco-tablet-1x.png);
+        }
+    }
+    
+        .thanks-buy-close {
+ width: 40px;
+ height: 40px;
+    top: 24px;
+    right: 24px;
+}
+
+.thanks-buy-title {
+
+    font-size: 28px;
+    line-height: 1.7;
+}
+
+.thanks-buy-text {
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+}
