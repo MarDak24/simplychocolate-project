@@ -156,7 +156,6 @@
     }
   }
 }
-
 /*_____________________________________DESKTOP__________________________________*/
 
 @media screen and (min-width: 1200px) {
@@ -175,7 +174,7 @@
 }
 
 /*_____________________________MODAL-WINDOW(NEW CHOCOLATE)________________________*/
-.subscribe-modal{
+.subscribe-modal {
   opacity: 0;
   overflow: hidden;
 }
