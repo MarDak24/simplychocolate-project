@@ -1,0 +1,238 @@
+.buy-modal-form{
+    display: flex;
+    gap: 18px;
+}
+.buy-now-modal {
+    opacity: 1;
+    visibility: visible;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+
+    width: 100%;
+    max-width: 311px;
+    padding: 32px 24px;
+    border-radius: 15px;
+    background-color: #FAFAFA;
+    transition: 0.3s all;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.buy-now-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+    stroke: #111;
+}
+
+.buy-now-title {
+    display: inline-block;
+    margin-bottom: 32px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #FD9222;
+}
+
+.buy-now-title-part{
+color: #111111;
+}
+
+.buy-now-list{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+.buy-now-item{
+    width: 231px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-top: 32px;
+    padding-bottom: 28px;
+    
+        background-color: #FFFFFF;
+        border: 1px solid rgba(17, 17, 17, 0.1);
+        border-radius: 15px;
+}
+/*---------------------------- Форма------------------------ */
+.buy-modal-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.buy-modal-form-des {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+}
+
+.buy-modal-form-input {
+    width: 100%;
+    height: 45px;
+    padding-left: 18px;
+   
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color:#111;
+    background-color: transparent;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+        filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+        border-radius: 8px;
+}
+.name-field {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        
+.tel-input{
+    padding-left: 106px;
+}
+
+.form-wrapper {
+    display: block;
+    position: relative;
+}
+
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translate(0%, -50%);
+}
+.modal-form-icon-mob {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(0%, -50%);
+
+        line-height: 1.2;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+        color: #000000;
+        padding-right: 8px;
+        box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.modal-form-icon-card{
+    position: absolute;
+        top: 50%;
+        right: 14px;
+        transform: translate(0%, -50%);
+}
+
+.buy-modal-message {
+    resize: none;
+    width: 100%;
+    height: 91px;
+
+    padding-top: 14px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 14px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+        filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+        border-radius: 8px;
+}
+
+.buy-modal-form-field::placeholder {
+    color: rgba(64, 64, 64, 0.3);
+}
+
+.btn-open-thank-you{
+    display: inline-block;
+    width: 109px;
+        border-radius: 100px;
+        padding: 12px 28px;
+    
+        color: #ffffff;
+        font-weight: 600;
+        line-height: 1.2;
+    background-color: var(--orange-color);
+}
+
+.btn-open-buy-now:is(:hover, :focus) {
+    background-color: #fcf1e0;
+    color: var(--orange-color);
+}
+
+/*----------------------- Медіа на 768 ---------------------*/
+
+
+
+
+@media screen and (min-width: 768px) {
+    .buy-now-modal {
+        max-width: 609px;
+        padding: 48px;}
+
+
+    .buy-now-close {
+        width: 28px;
+        height: 28px;
+        top: 24px;
+        right: 24px;
+    }
+
+    .buy-now-title {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+        .buy-now-list {
+            margin-bottom: 40px;
+        }
+        .buy-now-item {
+            width: calc((100% - 32px) / 3);}
+
+        .buy-modal-form-des {
+            font-size: 14px;
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+        }
+    .name-field{
+        flex-direction: row;
+        gap: 21px;
+    }
+
+    .buy-modal-form-input{
+        font-size: 18px;
+    }
+        .tel-input {
+            padding-left: 177px;
+        }
+
+.modal-form-icon {
+    left: 24px;
+    width: 32px;
+    height: 24px;
+}
+
+.modal-form-icon-mob {
+    left: 74px;
+    font-size: 18px;
+    padding-right: 32px;
+}
+
+.modal-form-icon-card {
+    right: 24px;
+    width: 44px;
+    height: 30px;
+}
+
+    .btn-open-thank-you {
+        width: 133px;
+        padding: 14px 40px;}
+}
