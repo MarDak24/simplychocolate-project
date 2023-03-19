@@ -1,0 +1,270 @@
+.components-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.components-section {
+    padding: 72px 0px;
+}
+
+.components-heading {
+    margin: auto;
+    margin-bottom: 24px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--dark-color);
+}
+
+.components-accent {
+    color: var(--orange-color);
+}
+
+.components-text {
+    margin: auto;
+    margin-bottom: 32px;
+
+    line-height: calc(18 / 14);
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: var(--dark-color);
+}
+
+.components-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.components-flip-card {
+    background-color: transparent;
+    width: 240px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.components-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.components-flip-card:hover .components-card-inner,
+.components-flip-card:focus .components-card-inner {
+    transform: rotateY(180deg);
+}
+
+.components-card-front {
+    overflow: hidden;
+}
+
+.components-card-front,
+.components-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0px 12px;
+
+    border: 1px solid var(--orange-color);
+    border-radius: 15px;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.components-card-front {
+   color: white;
+   background-color: var(--orange-color);
+}
+
+.components-flip-card:nth-child(2n) .components-card-front{
+    background-color: white;
+    color: var(--dark-color);
+}
+
+.components-flip-card:nth-child(3n+3) .components-card-front {
+    border-color: var(--dark-color);
+    background-color: var(--dark-color);
+}
+
+.components-img-container {
+    margin-bottom: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.components-card-heading {
+    font-weight: 600;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.components-card-back {
+    padding: 8px 12px;
+
+    transform: rotateY(180deg);
+}
+
+.components-back-heading {
+    margin-bottom: 8px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(22 /18);
+
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.components-description {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+    gap: 6px;
+}
+
+.components-name,
+.components-benefits {
+    min-width: 54px;
+    padding: 5px 15px;
+
+    border: solid 1px var(--orange-color);
+    border-radius: 35px;
+
+    font-size: 10px;
+    line-height:  calc(12 / 10);
+    text-transform: lowercase;
+}
+
+.components-name {
+    background-color: var(--orange-color);
+    color: white;
+}
+
+.components-info-text {
+    max-height: 110px;
+
+    overflow-y: auto;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    color: var(--dark-color);
+}
+
+.components-info-text::-webkit-scrollbar {
+    width: 0;
+}
+
+@media screen and (min-width: 375px) {
+
+    .components-container {
+        max-width: 375px;
+    }
+
+    .components-flip-card {
+        width: 335px;
+        height: 270px;
+    }
+
+    .components-card-front,
+    .components-card-back {
+        padding: 28px;
+    }
+
+    .components-img-container {
+        margin-bottom: 25px;
+    }
+
+    .components-info-text {
+        max-height: none;
+        height: 146px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    .components-container {
+        max-width: 768px;
+        padding: 0px 32px;
+    }
+
+    .components-section {
+        padding: 100px 0px;
+    }
+
+    .components-heading {
+        width: 411px;
+        margin-bottom: 28px;
+
+        font-size: 24px;
+        line-height: calc(28 / 20);
+    }
+
+    .components-text {
+        width: 486px;
+        margin-bottom: 50px;
+    }
+
+    .components-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .card-1 {
+        order: 1;
+    }
+
+    .card-4 {
+        order: 2;
+    }
+
+    .card-2 {
+        order: 3;
+    }
+
+    .card-3 {
+        order: 4;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .components-container {
+        max-width: 1200px;
+    }
+
+    .components-section {
+        padding: 128px 0px;
+    }
+
+    .components-list {
+        flex-wrap: nowrap;
+        gap: 19px;
+    }
+
+    .components-flip-card {
+        width: 270px;
+        height: 270px;
+    }
+
+}
+
+
+
