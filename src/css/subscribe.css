@@ -25,7 +25,7 @@
     width: 100%;
     height: auto;
     background-image: url(/img/mobile/subscribe/subscribe-mobile-1x.jpg);
-    border-color: var(--orange-color);
+    background-color: var(--dark-purple-color);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -91,6 +91,28 @@
         margin-left: auto;
         margin-right: auto;
 
+<<<<<<< Updated upstream
+=======
+  .subscribe {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    width: 100%;
+    height: auto;
+    background-image: url(/img/tablet/subscribe/subscribe-tablet-1x.jpg);
+    background-color: var(--dark-purple-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: url(/img/tablet/subscribe/subscribe-tablet-2x.jpg);
+>>>>>>> Stashed changes
     }
      .sub-conteiner {
          display: flex;
@@ -164,6 +186,14 @@
 
 /*_____________________________________DESKTOP__________________________________*/
 
+<<<<<<< Updated upstream
+=======
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    background-image: url(../img/desktop/subscribe/subscribe-desktop-1x.jpg);
+    background-color: var(--dark-purple-color);
+  }
+>>>>>>> Stashed changes
 
 @media screen and (min-width: 1200px) {
 
@@ -206,7 +236,7 @@
             box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
                 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
                 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-            border-radius: 4px;
+            border-radius: 10px;
             position: absolute;
     
     
@@ -271,9 +301,14 @@
                font-weight: 600;
                font-size: 14px;
            }
-                   .modal-form-field{
-                    position: relative;
-                   }
+              .modal-btn:hover,
+              .modal-btn:focus {
+                background-color: #fcf1e0;
+                color: var(--orange-color);
+               }
+              .modal-form-field{
+              position: relative;
+              }
 }
 
 @media screen and (min-width:768px) {
@@ -288,7 +323,7 @@
         box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
             0px 1px 3px 0px rgba(0, 0, 0, 0.12),
             0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
+        border-radius: 10px;
         position: absolute;
 
 
@@ -350,11 +385,11 @@
             font-size: 14px;
         }
 
-        .modal-form-field{
-           
-            
-
-        }
+             .modal-btn:hover,
+             .modal-btn:focus {
+               background-color: #fcf1e0;
+               color: var(--orange-color);
+             }
 }
 
 @media screen and (min-width: 1200px) {
@@ -368,7 +403,7 @@
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12),
         0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    border-radius: 10px;
     position: absolute;
     
 }
@@ -424,5 +459,14 @@
     font-weight: 600;
     font-size: 14px;
 }
-
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #fcf1e0;
+  color: var(--orange-color);
 }
+
+<<<<<<< Updated upstream
+}
+=======
+}
+>>>>>>> Stashed changes
