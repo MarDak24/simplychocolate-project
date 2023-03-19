@@ -51,9 +51,9 @@
 
   <!-- Форма -->
   <form class="buy-modal-form">
-    <label class="buy-modal-form-field">
-      <span class="buy-modal-form-des">Personal information</span>
-      <div class="name-field">
+    <div class="name-field">
+      <label class="buy-modal-form-field">
+        <span class="buy-modal-form-des">Personal information</span>
         <input
           type="text"
           name="user_name"
@@ -63,6 +63,8 @@
           minlength="2"
           placeholder="Name"
         />
+      </label>
+      <label class="buy-modal-form-field">
         <input
           type="text"
           name="user_surname"
@@ -72,8 +74,8 @@
           minlength="2"
           placeholder="Surname"
         />
-      </div>
-    </label>
+      </label>
+    </div>
 
     <label class="buy-modal-form-field">
       <span class="buy-modal-form-des">Email</span>
@@ -107,11 +109,9 @@
       <span class="buy-modal-form-des">Card number</span>
       <span class="form-wrapper">
         <input
-          type="number"
+          type="text"
           name="user_card"
           class="buy-modal-form-input"
-          required
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
           maxlength="16"
           placeholder="Enter card"
         />
@@ -133,8 +133,6 @@
       type="submit"
       class="btn-open-thank-you js-open-modal"
       data-modal="2"
-      class="js-modal-close"
-      data-modal="1"
     >
       Submit
     </button>

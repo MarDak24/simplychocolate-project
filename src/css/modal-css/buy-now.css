@@ -234,6 +234,7 @@ color: #111111;
     .name-field{
         flex-direction: row;
         gap: 21px;
+        align-items: flex-end;
     }
 
     .buy-modal-form-input{
