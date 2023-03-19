@@ -109,6 +109,12 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .how-made-container {
+    max-width: 768;
+    padding-left: 77px;
+    padding-right: 77px;
+  }
   .how-made-text {
     margin-bottom: 50px;
   }
