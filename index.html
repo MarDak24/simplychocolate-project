@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
   <script type="module" crossorigin src="/simplychocolate-group13/assets/index-63a553b3.js"></script>
-  <link rel="stylesheet" href="/simplychocolate-group13/assets/index-7924ae4f.css">
+  <link rel="stylesheet" href="/simplychocolate-group13/assets/index-818c4f8d.css">
 </head>
 
 <body>
@@ -46,7 +46,6 @@
                 </svg>
             </a>
         </div>
-    </div>
     </div>
 </section>
     <!-- Tetiana -->
@@ -122,18 +121,54 @@
 </section>
     <section class="subscribe">
 
-    <div class="conteiner sub-conteiner">         
-    <h2 class="subscribe-title">EXPLORE OUR NEW <br>CHOCOLATE FIRST</h2>
-    <p class="subscribe-text">From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.</p>
+    <div class="conteiner sub-conteiner">
+        <h2 class="subscribe-title">EXPLORE OUR NEW <br>CHOCOLATE FIRST</h2>
+        <p class="subscribe-text">From the velvety texture to the rich and complex flavor, our New Chocolate is a true
+            indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the
+            utmost care, each piece is a work of art that is sure to please.</p>
 
-    <button class="subscribe-button" type="button">Subscribe</button>
-   </div>
+        <button class="subscribe-button" type="button" js-open-modal>Subscribe</button>
+    </div>
+    
+    <div class="subscribe-modal is-hidden" data-modal>
 
+        <picture>
+            <source srcset="../img/desktop+tablet/modal-new-chocolate/newChoco-desk+tab-1x.jpg 1x, 
+                    ../img/desktop+tablet/modal-new-chocolate/newChoco-desk+tab-2x.jpg 2x" media="(min-width:1200px)">
+
+            <source srcset="../img/desktop+tablet/modal-new-chocolate/newChoco-desk+tab-1x.jpg 1x, 
+                    ../img/desktop+tablet/modal-new-chocolate/newChoco-desk+tab-2x.jpg 2x" media="(min-width:768px)">
+
+            <source srcset="../img/mobile/modal-new-chocolate/newChoco-mobile-1x.jpg 1x, 
+                    ../img/mobile/modal-new-chocolate/newChoco-mobile-2x.jpg 2x" media="(max-width:768px)">
+
+            <img class="subscribe-pic" src="../img/desktop+tablet/modal-new-chocolate/newChoco-desk+tab-1x.jpg"
+                alt="Chocolate" height="196">
+        </picture>
+
+
+        <button class="sub-close-btn" type="button" js-modal-close>
+            <svg class="sub-close-icon" width="28" height="28">
+                <use href="../img/SVG/symbol-defs.svg#icon-x-close"></use>
+            </svg>
+        </button>
+        <div class="explore-form">
+            <h1 class="sub-title">EXPLORE OUR<br> <span class="sub-title-part">NEW CHOCOLATE</span> FIRST! </h1>
+            <form action="#" class="contact-form">
+
+                <div class="modal-form-field">
+                    <label class="input-title" for="email"></label>
+                    <span class="modal-input-wrapper">
+                        <input type="email" class="modal-input" id="email" name="Email" required
+                            placeholder="Enter your email">
+                    </span>
+
+                    <button type="submit" class="modal-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </section>
-
-
-
-
     <!-- MODAL WINDOW -->
     
     
