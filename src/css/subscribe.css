@@ -1,5 +1,6 @@
 .subscribe {
   background-color: var(--dark-purple-color);
+  position: relative;
 }
 
 /*_________________________________________MOBILE___________________________________________*/
