@@ -113,6 +113,7 @@
 .components-card-back {
     padding: 8px 12px;
 
+    background-color: white;
     transform: rotateY(180deg);
 }
 
