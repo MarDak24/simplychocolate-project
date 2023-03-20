@@ -1,0 +1,196 @@
+/* Serhiy Panchyshyn  */
+.footer-section {
+  background-color: var(--dark-purple-color);
+  padding: 32px 0px;
+}
+
+.footer-container {
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--white-color);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-logo-box {
+  max-width: 300px;
+}
+
+.footer-logo {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+}
+
+.footer-logo span {
+  color: var(--orange-color);
+}
+
+.footer-contacts {
+  line-height: 129%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-text {
+  font-weight: 500;
+  line-height: 129%;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contacts-list-item {
+  font-weight: 400;
+}
+
+.networks-container {
+  width: 58px;
+  height: 22px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-item {
+  width: 22px;
+  height: 22px;
+}
+.social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  fill: var(--white-color);
+}
+
+.footer-menu {
+  margin-top: 32px;
+}
+.footer-menu-container::before {
+  content: '';
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: rotate(180deg);
+}
+
+.footer-menu {
+  position: relative;
+  line-height: 114%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.f-menu-anchor {
+  position: relative;
+}
+
+.f-menu-anchor:hover,
+.f-menu-anchor:focus {
+  color: var(--orange-color);
+}
+
+.f-menu-anchor:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--orange-color);
+  border-radius: 1px;
+}
+
+/* ---------MOBILE-------------- */
+@media screen and (min-width: 375px) {
+  .footer-container {
+    max-width: 375px;
+  }
+}
+/* ---------TABLET-------------- */
+
+@media screen and (min-width: 768px) {
+  .footer-section {
+    padding: 50px 0px;
+  }
+
+  .footer-container.footer-content {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px 0px;
+  }
+
+  .footer-logo {
+    line-height: 121%;
+  }
+
+  .footer-contacts {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+  }
+
+  .networks-container {
+    height: 24px;
+  }
+
+  .social-icon:hover,
+  .social-icon:focus {
+    fill: var(--orange-color);
+  }
+  .footer-menu {
+    margin-top: 24px;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-menu-container {
+    width: 100%;
+  }
+}
+
+/* ---------DESKTOP-------------*/
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    min-width: 1200px;
+    max-width: 1200px;
+  }
+
+  .footer-contacts {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 63px;
+  }
+}
