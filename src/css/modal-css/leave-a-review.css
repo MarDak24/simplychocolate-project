@@ -8,14 +8,14 @@
     transform: translate(-50%, -50%);
     z-index: 30;
     
-        width: 100%;
-        max-width: 311px;
-        padding-top: 32px;
-        padding-right: 32px;
-        padding-bottom: 391px;
-        padding-left: 24px;
+    width: 100%;
+    max-width: 311px;
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-bottom: 391px;
+    padding-left: 24px;
 
-    background-color: #FD9222;
+    /* background-color: #FD9222; */
     transition: 0.3s all;
 
     background: #FAFAFA;
@@ -38,7 +38,7 @@
 
 .leave-review-title{
     display: inline-block;
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
     
     /* position: absolute; */
     width: 255px;
@@ -57,19 +57,18 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* padding: 0px; */
-    /* gap: 18px; */
     position: absolute;
     width: 263px;
     height: 327px;
-    /* left: 24px;
-    top: 112px; */
 }
 .leave-review-inputs{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 14px;
+    margin-top: 32px;
+    margin-bottom: 18px;
+    font-size: 14px;
 }
 .leave-review-wrap{
    /* margin-bottom: 8px; */
@@ -90,21 +89,45 @@
     filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
     border-radius: 8px; 
 }
-.flag-country{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 20px 0px 0px;
-    gap: 8px;
+.leave-review-form-wrapper {
+    display: block;
+    position: relative;
 }
-.leave-review-flag{
+.leave-review-form-input {
+    width: 100%;
+    height: 45px;
+    padding-left: 18px;
 
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #111;
+    /* background-color: transparent; */
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 8px;
 }
-.leave-review-country{
+.leave-review-tel-input {
+    padding-left: 106px;
+}
+.leave-review-flag {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translate(0%, -50%);
+}
+.leave-review-country {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(0%, -50%);
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
     color: #000000;
+    letter-spacing: -0.02em;
+    padding-right: 8px;
+    box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
 }
 .leave-review-comment{
     display: flex;
@@ -115,10 +138,12 @@
 
     width: 263px;
     height: 91px;
+    font-size: 14px;
 
     border: 1.5px solid rgba(17, 17, 17, 0.05);
-    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    /* filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03)); */
     border-radius: 8px;
+    resize: none;
 }
 .leave-review-submit-btn{
     display: flex;
@@ -130,6 +155,11 @@
     height: 41px;    
     background: #FD9222;
     border-radius: 100px;
+    color: #FFFFFF;
+}
+.leave-review-submit-btn:is(:hover, :focus) {
+    background-color: #fcf1e0;
+    color: var(--orange-color);
 }
 
 .overlay {
@@ -152,9 +182,74 @@
 }
 
 @media screen and (min-width: 768px){
+    .modal{
+        max-width: 517px;
+        padding-top: 40px;
+        padding-right: 179px;
+        padding-bottom: 535px;
+        padding-left: 40px;
+    }
+    .leave-review-close-icon{
+        top: 24px;
+        right: 24px;
+        width: 28px;
+        height: 28px;
+    }
+    .leave-review-title{
+        width: 298px;
 
-}
+        font-size: 24px;
+        line-height: 1.17;
+    }
+    .leave-review-form{
+        width: 437px;
+        /* height: 327px; */
+    }
+    .leave-review-inputs{
+        gap: 19px;
+        margin-top: 40px;
+        /* width: 437px; */
+    }
+    .leave-review-wrap{
+        /* height: 66px; */
+    }
+    .leave-review-input{
+        width: 437px;
+        height: 66px;
+        padding: 14px 18px;   
+        font-size: 18px;
+    }
 
-@media screen and (min-width: 1200px){
 
+    .leave-review-form-wrapper {
+        width: 437px;        
+    }
+    .leave-review-form-input {
+        font-size: 18px;
+        height: 66px;
+    }    
+    .leave-review-tel-input {
+        padding-left: 177px;
+    }
+    .leave-review-flag {
+        left: 24px;
+        width: 32px;
+        height: 24px;
+    }    
+    .leave-review-country {
+        left: 74px;
+        font-size: 18px;
+        padding-right: 32px;
+    }
+
+    .leave-review-comment{
+        width: 437px;
+        height: 137px;
+        font-size: 18px;
+    }
+    .leave-review-submit-btn{
+        padding: 14px 40px;
+        width: 117px;
+        height: 45px;    
+    }
 }
