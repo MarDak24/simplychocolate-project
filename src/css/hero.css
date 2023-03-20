@@ -71,6 +71,7 @@
   font-weight: 600;
   line-height: 1.2;
 }
+
 .btn-open-buy-now {
   background-color: var(--orange-color);
   border: 1px solid transparent;
@@ -79,6 +80,7 @@
 .how-btn {
   border: 1px solid #ffffff;
 }
+
 .scroll-btn {
   display: flex;
   align-items: center;
@@ -91,6 +93,7 @@
 
   color: #ffffff;
 }
+
 .scroll-down-icon {
   fill: var(--orange-color);
   background-color: #ffffff;
@@ -102,10 +105,12 @@
   background-color: #fcf1e0;
   color: var(--orange-color);
 }
+
 .how-btn:is(:hover, :focus) {
   color: var(--orange-color);
   border: 1px solid var(--orange-color);
 }
+
 .scroll-btn:is(:hover, :focus) {
   color: var(--orange-color);
 }
@@ -177,35 +182,35 @@
     height: 38px;
     padding: 16px 12px;
   }
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    max-width: 1136px;
+    padding-top: 381px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../img/desktop/hero/hero-bg-desktop-1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero-container {
-      max-width: 1136px;
-      padding-top: 381px;
       background-image: linear-gradient(
           180deg,
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url(../img/desktop/hero/hero-bg-desktop-1x.jpg);
+        url(../img/desktop/hero/hero-bg-desktop-2x.jpg);
     }
+  }
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .hero-container {
-        background-image: linear-gradient(
-            180deg,
-            rgba(17, 17, 17, 0) 0%,
-            rgba(17, 17, 17, 0.4) 100%
-          ),
-          url(../img/desktop/hero/hero-bg-desktop-2x.jpg);
-      }
-    }
-
-    .hero-section {
-      padding-top: 32px;
-      padding-bottom: 72px;
-    }
+  .hero-section {
+    padding-top: 32px;
+    padding-bottom: 72px;
   }
 }
