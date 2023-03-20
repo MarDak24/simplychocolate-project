@@ -1,0 +1,58 @@
+<div class="modal" data-modal="3">
+  <svg class="leave-review-close-icon js-modal-close" width="24" height="24">
+    <use href="../img/SVG/symbol-defs.svg#icon-x-close"></use>
+  </svg>
+  <h2 class="leave-review-title">
+    leave a review about
+    <span class="leave-review-title-our"> our chocolate</span>
+  </h2>
+  <form class="leave-review-form">
+    <div class="leave-review-inputs">
+      <div class="leave-review-wrap">
+        <input
+          class="leave-review-input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+        />
+      </div>
+      <div class="leave-review-wrap">
+        <input
+          class="leave-review-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+      </div>
+
+      <span class="leave-review-form-wrapper">
+        <input
+          type="tel"
+          name="user_tel"
+          class="leave-review-form-input leave-review-tel-input"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="Phone number"
+        />
+        <svg class="leave-review-flag" width="24" height="18">
+          <use href="../img/SVG/symbol-defs.svg#icon-flag"></use>
+        </svg>
+        <span class="leave-review-country">+380</span>
+      </span>
+
+      <div class="leave-review-wrap comment">
+        <textarea
+          class="leave-review-comment"
+          name="comment"
+          id="comment"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+    </div>
+    <button type="submit" class="leave-review-submit-btn">Send</button>
+  </form>
+</div>
+
+<div class="overlay js-overlay-modal"></div>
