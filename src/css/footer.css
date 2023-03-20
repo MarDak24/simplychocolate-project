@@ -83,8 +83,9 @@
   align-items: center;
 }
 
-.social-icon {
-  fill: var(--white-color);
+.footer-social-icon {
+  fill: transparent;
+  stroke: white;
 }
 
 .footer-menu {
@@ -165,8 +166,8 @@
     height: 24px;
   }
 
-  .social-icon:hover,
-  .social-icon:focus {
+  .footer-social-icon:hover,
+  .footer-social-icon:focus {
     fill: var(--orange-color);
   }
   .footer-menu {

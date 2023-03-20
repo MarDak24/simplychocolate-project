@@ -4,7 +4,6 @@
   padding-right: 20px;
   margin: 0 auto;
 
-  padding-top: 14px;
   padding-bottom: 71px;
 }
 
@@ -159,7 +158,6 @@
   .hero-section {
     padding-left: 32px;
     padding-right: 32px;
-    padding-top: 24px;
     padding-bottom: 50px;
   }
   .hero-title {
@@ -210,7 +208,6 @@
   }
 
   .hero-section {
-    padding-top: 32px;
     padding-bottom: 72px;
   }
 }
