@@ -100,7 +100,15 @@
   color: #ffffff;
   background: var(--orange-color);
 }
-
+.swiper {
+  width: auto;
+  height: auto;
+}
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
 @media screen and (min-width: 375px) {
   .reviews {
     padding-top: 72px;
@@ -111,8 +119,8 @@
   }
 
   .reviews-benefits {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: auto;
+    padding-right: auto;
   }
 }
 
@@ -150,6 +158,12 @@
     font-size: 18px;
     margin-top: 108px;
   }
+.swiper-wrapper {
+   gap: 28px;
+  }
+.swiper-slide {
+   max-width:330px;
+   }
 }
 
 @media screen and (min-width: 1200px) {
@@ -167,4 +181,10 @@
   .reviews-item{
     width: 360px;
   }
+ .swiper-wrapper {
+   gap: 28px;
+ }
+ .swiper-slide {
+   max-width: 350px;
+ }
 }
