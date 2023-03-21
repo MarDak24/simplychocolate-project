@@ -1,16 +1,14 @@
 .leave-modal{
-    opacity: 0;
-    visibility: hidden;
     
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    z-index: 30;
+    z-index: 50;
     
     width: 100%;
     max-width: 311px;
-    height: 471px;
+    height: auto;
     padding-top: 32px;
     padding-right: 24px;
     padding-bottom: 32px;
@@ -123,7 +121,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 14px 18px 60px;
+    padding: 14px 18px;
     gap: 40px;
 
     width: 263px;
