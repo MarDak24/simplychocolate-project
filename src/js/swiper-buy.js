@@ -1,5 +1,6 @@
 const swiper = new Swiper('.swiper-modal', {
   slidesPerView: 1,
+  spaseBetween: 20,
   autoplay: {
     delay: 2000,
     disableOnInteraction: false,

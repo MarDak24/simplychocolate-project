@@ -20,7 +20,7 @@
   background-color: #fd9222;
   transition: 0.3s all;
 
-  background-image: url(../img/mobile/modal-thankYou/choco-thank-feedback-mobile-1x.png);
+  background-image: url(../../img/mobile/modal-thankYou/choco-thank-feedback-mobile-1x.png);
   background-repeat: no-repeat;
   background-size: 283px, 394px;
   background-position: left bottom;
@@ -30,7 +30,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .thanks-buy-modal {
-    background-image: url(../img/mobile/modal-thankYou/choco-thank-feedback-mobile-2x.png);
+    background-image: url(../../img/mobile/modal-thankYou/choco-thank-feedback-mobile-2x.png);
   }
 }
 
@@ -79,14 +79,14 @@
     padding-bottom: 163px;
     padding-left: 170px;
 
-    background-image: url(../img/desktop+tablet/modal-thankYou/choco-thank-feedback-tablet-1x.png);
+    background-image: url(../../img/desktop+tablet/modal-thankYou/choco-thank-feedback-tablet-1x.png);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .thanks-buy-modal {
-      background-image: url(../img/desktop+tablet/modal-thankYou/choco-thank-feedback-tablet-2x.png);
+      background-image: url(../../img/desktop+tablet/modal-thankYou/choco-thank-feedback-tablet-2x.png);
     }
   }
   .thank-feedback-close-icon {
