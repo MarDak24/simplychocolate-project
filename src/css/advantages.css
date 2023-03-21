@@ -1,7 +1,8 @@
 .advantages-container {
   width: 100%;
+  max-width: 365px;
   margin: 0 auto;
-  padding: 0px 16px;
+  padding: 0px 15px;
 }
 
 .advantages-section {
@@ -46,8 +47,7 @@
 
 @media screen and (min-width: 375px) {
   .advantages-container {
-    max-width: 375px;
-    padding: 0px 20px;
+    padding: 0px 15px;
   }
 
   .advantages-item {
@@ -57,8 +57,8 @@
 
 @media screen and (min-width: 768px) {
   .advantages-container {
-    max-width: 768px;
-    padding: 0px 32px;
+    max-width: 734px;
+    padding: 0px 15px;
   }
 
   .advantages-section {
@@ -78,8 +78,8 @@
 
 @media screen and (min-width: 1200px) {
   .advantages-container {
-    max-width: 1200px;
-    padding: 0 50px;
+    max-width: 1130px;
+    padding: 0 15px;
   }
 
   .advantages-list {

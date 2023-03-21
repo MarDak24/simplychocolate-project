@@ -7,12 +7,13 @@
     visibility:  hidden;
 
     position: fixed;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     z-index: 30;
 
     width: 100%;
+    height: auto;
     max-width: 311px;
     padding: 32px 24px;
     border-radius: 15px;

@@ -1,3 +1,11 @@
+.how-made-container {
+  max-width: 365px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .how-made-text {
   font-weight: 600;
   font-size: 24px;
@@ -28,6 +36,8 @@
 }
 .how-made-text-decoration {
   width: 100%;
+  background-color: white;
+  border-radius: 15px;
 }
 .how-made-ul-decoration {
   padding-left: 16px;
@@ -56,16 +66,14 @@
     margin-bottom: 20px;
   }
   .how-made-video {
-    margin-bottom: 20px;
     width: 100%;
   }
+    .howe-made-video-i {
+    margin-bottom: 20px;
+  }
+
   .how-made-text {
     margin-bottom: 32px;
-  }
-  .how-made-container {
-    max-width: 375px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .how-made-section {
     padding-bottom: 72px;
@@ -75,7 +83,6 @@
   }
   .howe-made-video-i {
     height: 500px;
-    padding: 20px 14px 20px 14px;
   }
   video {
     border-radius: 15px;
@@ -106,21 +113,19 @@
 @media screen and (min-width: 768px) {
   .how-made-section {
     padding-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .how-made-container {
-    max-width: 768;
-    padding-left: 77px;
-    padding-right: 77px;
+    max-width: 644px;
   }
   .how-made-text {
     margin-bottom: 50px;
   }
-  .how-made-video {
+  .howe-made-video-i {
     margin-bottom: 20px;
   }
+
+
   .how-made-text-decoration {
     padding: 32px;
   }
@@ -172,16 +177,10 @@
   }
 
   .how-made-container {
-    max-width: 1200px;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1166px;
   }
   .how-made-section {
     padding-bottom: 128px;
-    padding-left: 32px;
-    padding-right: 32px;
   }
   .howe-made-mb:not(:last-child) {
     margin-bottom: 24px;

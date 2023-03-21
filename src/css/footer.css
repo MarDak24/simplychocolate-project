@@ -8,8 +8,9 @@
   margin-left: auto;
   margin-right: auto;
   color: var(--white-color);
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 365px;
 }
 
 .footer-content {
@@ -128,9 +129,6 @@
 
 /* ---------MOBILE-------------- */
 @media screen and (min-width: 375px) {
-  .footer-container {
-    max-width: 375px;
-  }
 }
 /* ---------TABLET-------------- */
 
@@ -139,10 +137,8 @@
     padding: 50px 0px;
   }
 
-  .footer-container.footer-content {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+  .footer-container {
+    max-width: 734px;
   }
 
   .footer-content {
@@ -185,8 +181,7 @@
 
 @media screen and (min-width: 1200px) {
   .footer-container {
-    min-width: 1200px;
-    max-width: 1200px;
+    max-width: 1166px;
   }
 
   .footer-contacts {

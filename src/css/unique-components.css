@@ -1,7 +1,9 @@
 .components-container {
     width: 100%;
+    max-width: 375px;
+
     margin: 0 auto;
-    padding: 0px 20px;
+    padding: 0px 15px;
 }
 
 .components-section {
@@ -168,9 +170,6 @@
 
 @media screen and (min-width: 375px) {
 
-    .components-container {
-        max-width: 375px;
-    }
 
     .components-flip-card {
         width: 335px;
@@ -197,8 +196,8 @@
 @media screen and (min-width: 768px) {
     
     .components-container {
-        max-width: 768px;
-        padding: 0px 32px;
+        max-width: 734px;
+        padding: 0px 15px;
     }
 
     .components-section {
@@ -248,7 +247,7 @@
 @media screen and (min-width: 1200px) {
 
     .components-container {
-        max-width: 1200px;
+        max-width: 1166px;
     }
 
     .components-section {
