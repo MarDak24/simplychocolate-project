@@ -49,7 +49,7 @@
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 32px;    
 }
 .buy-now-item {
   display: flex;
@@ -67,6 +67,9 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
 }
+.buy-now-item:not(:first-child){
+    display: none;
+}
 
 .buy-now-item-desc {
   display: block;
@@ -78,7 +81,27 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
 }
-
+.buy-now-wrap{
+    margin-bottom: 32px;
+}
+.decoration-list{
+    display: flex;
+    gap: 13px;
+    justify-content: center;
+}
+.decoration{
+display: block;
+width: 13px;
+    height: 13px;
+border-radius: 100%;
+    background: rgba(17, 17, 17, 0.1);
+}
+.decoration:first-child{
+    width: 28px;
+        height: 13px;
+        background: #FD9222;
+        border-radius: 7px;
+}
 /*---------------------------- Форма------------------------ */
 .buy-modal-form {
   display: flex;
@@ -264,6 +287,28 @@
     padding-right: 20px;
     padding-bottom: 18px;
   }
+    .buy-now-title {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+        .buy-now-list {
+            margin-bottom: 40px;
+        }
+        .buy-now-item:not(:first-child) {
+            display: flex;
+        }
+        .decoration-list{
+            display: none;
+        }
+        .buy-now-item {
+            width: calc((100% - 32px) / 3);
+            gap: 14px;
+        
+            padding-top: 24px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 18px;}
+                        
 
   .buy-modal-form-des {
     font-size: 14px;
