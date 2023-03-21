@@ -109,6 +109,9 @@
   background-position: center;
   object-fit: cover;
 }
+/*.swiper1, {
+ overflow: visible;
+}*/
 @media screen and (min-width: 375px) {
   .reviews {
     padding-top: 72px;
