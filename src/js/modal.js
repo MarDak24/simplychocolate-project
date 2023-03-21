@@ -32,6 +32,16 @@ document.addEventListener('DOMContentLoaded', function () {
     overlay = document.querySelector('.js-overlay-modal'),
     closeButtons = document.querySelectorAll('.js-modal-close');
 
+  closeButtons.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      var parentModal = this.closest('.modal');
+
+      parentModal.classList.remove('active');
+      overlay.classList.remove('active');
+      bodyUnLock();
+    });
+  }); // end foreach
+
   /* Перебираем массив кнопок */
   modalButtons.forEach(function (item) {
     /* Назначаем каждой кнопке обработчик клика */
@@ -52,16 +62,8 @@ document.addEventListener('DOMContentLoaded', function () {
             подложке и окну чтобы показать их. */
       modalElem.classList.add('active');
       overlay.classList.add('active');
+      bodyLock();
     }); // end click
-  }); // end foreach
-
-  closeButtons.forEach(function (item) {
-    item.addEventListener('click', function (e) {
-      var parentModal = this.closest('.modal');
-
-      parentModal.classList.remove('active');
-      overlay.classList.remove('active');
-    });
   }); // end foreach
 
   document.body.addEventListener(
@@ -72,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (key == 27) {
         document.querySelector('.modal.active').classList.remove('active');
         document.querySelector('.overlay').classList.remove('active');
+        bodyUnLock();
       }
     },
     false
@@ -80,5 +83,14 @@ document.addEventListener('DOMContentLoaded', function () {
   overlay.addEventListener('click', function () {
     document.querySelector('.modal.active').classList.remove('active');
     this.classList.remove('active');
+    bodyUnLock();
   });
+
+  function bodyLock() {
+    document.body.style.overflow = 'hidden';
+  }
+
+  function bodyUnLock() {
+    document.body.style.removeProperty('overflow');
+  }
 }); // end ready

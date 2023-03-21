@@ -1,8 +1,6 @@
 /*_____________________________MODAL-WINDOW(NEW CHOCOLATE)________________________*/
   .subscribe-modal {
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
+    z-index: 50;
 
     top: 50%;
     left: 50%;
@@ -17,18 +15,7 @@
   }
 @media screen and (max-width: 767px) {
   .subscribe-modal {
-    overflow: hidden;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 30;
     width: 311px;
-    height: auto;
-    background-color: #fcfcfc;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-      0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
   }
 
   .explore-form {
@@ -160,12 +147,6 @@
 @media screen and (min-width: 1200px) {
   .subscribe-modal {
     width: 538px;
-    height: auto;
-    background-color: #fcfcfc;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-      0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    position: absolute;
   }
   .sub-close-btn {
     position: absolute;
