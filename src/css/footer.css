@@ -86,7 +86,7 @@
 
 .footer-social-icon {
   fill: transparent;
-  stroke: white;
+  stroke: var(--white-color);
 }
 
 .footer-menu {
@@ -111,10 +111,10 @@
   position: relative;
 }
 
-.f-menu-anchor:hover,
+/* .f-menu-anchor:hover,
 .f-menu-anchor:focus {
   color: var(--orange-color);
-}
+} */
 
 .f-menu-anchor:hover::after {
   content: '';
@@ -164,7 +164,7 @@
 
   .footer-social-icon:hover,
   .footer-social-icon:focus {
-    fill: var(--orange-color);
+    stroke: var(--orange-color);
   }
   .footer-menu {
     margin-top: 24px;

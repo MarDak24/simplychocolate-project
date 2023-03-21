@@ -62,8 +62,21 @@
   stroke: #111111;
   fill: none;
 }
+.header-item {
+  position: relative;
+}
 .header-item:is(:hover, :focus) {
   color: #fd9222;
+}
+.header-item:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--orange-color);
+  border-radius: 1px;
 }
 
 .header-soc-icon:is(:hover, :focus):is(:hover, :focus) {
@@ -135,6 +148,7 @@
 }
 
 .mob-menu-link {
+  position: relative;
   font-style: normal;
   font-weight: 500;
   line-height: 1.4;
@@ -151,6 +165,17 @@
 
 .mob-menu-link:is(:hover, :focus) {
   color: #fd9222;
+}
+
+.mob-menu-link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--orange-color);
+  border-radius: 1px;
 }
 
 .mob-menu-soc-icon {
