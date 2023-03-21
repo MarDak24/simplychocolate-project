@@ -1,25 +1,15 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-modal', {
   slidesPerView: 1,
   autoplay: {
     delay: 2000,
     disableOnInteraction: false,
   },
-  //відступ між слайдами
-  spaseBetween: 18,
+
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination-modal',
     clickable: true, // что-бы сделать пагинацию кликабельной
   },
 
-  // Брейк-поінти
-  breakpoints: {
-    768: {
-      slidesPerView: 2.5,
-    },
-    1200: {
-      slidesPerView: 4,
-    },
-  },
   on: {
     init() {
       this.el.addEventListener('mouseenter', () => {
