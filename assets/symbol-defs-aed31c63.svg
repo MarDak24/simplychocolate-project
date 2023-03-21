@@ -91,8 +91,8 @@
 </symbol>
 <!-- $$$$$$$$$$$$  MODAL_LEAVE-A-REVIEW  $$$$$$$$$$$$$$$$$ -->
 <symbol id="icon-x-close" viewBox="0 0 32 32">
-<path fill="#e2e2e2" style="fill: var(--color1, #e2e2e2)" d="M0 0h32v32h-32v-32z"></path>
-<path fill="#fafafa" style="fill: var(--color2, #fafafa)" d="M-344-18.667h374.667c11.046 0 20 8.954 20 20v588c0 11.046-8.954 20-20 20h-374.667c-11.046 0-20-8.954-20-20v-588c0-11.046 8.954-20 20-20z"></path>
+<path fill="" style="fill:" d="M0 0h32v32h-32v-32z"></path>
+<path fill="" style="fill:" d="M-344-18.667h374.667c11.046 0 20 8.954 20 20v588c0 11.046-8.954 20-20 20h-374.667c-11.046 0-20-8.954-20-20v-588c0-11.046 8.954-20 20-20z"></path>
 <path fill="none" stroke="#111" style="stroke: var(--color3, #111)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16"></path>
 <path fill="none" stroke="#111" style="stroke: var(--color3, #111)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M8 8l16 16"></path>
 </symbol>

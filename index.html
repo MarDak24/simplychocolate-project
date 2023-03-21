@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Simply Chocolate</title>
-  <link rel="shortcut icon" type="image/svg" href="/simplychocolate-group13/assets/symbol-defs-7d52af51.svg#favicon" />
+  <link rel="shortcut icon" type="image/svg" href="/simplychocolate-group13/assets/symbol-defs-aed31c63.svg#favicon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
   <script type="module" crossorigin src="/simplychocolate-group13/assets/index-63a553b3.js"></script>
-  <link rel="stylesheet" href="/simplychocolate-group13/assets/index-bccb35ad.css">
+  <link rel="stylesheet" href="/simplychocolate-group13/assets/index-c6dc0597.css">
 </head>
 
 <body>
@@ -46,7 +46,6 @@
         </li>
       </ul>
     </nav>
-    <div class="header-media">
       <ul class="header-soc-list list">
         <li class="header-soc-item list">
           <a class="header-soc-link link" href="https://www.instagram.com/" target="_blank"
@@ -64,13 +63,13 @@
           </a>
         </li>
       </ul>
-    </div>
 
-    <button type="button" class="menu-open js-open-menu" aria-expanded="true">
+    <button type="button" class="menu-open js-open-menu" aria-expanded="false">
       <svg class="menu-open-icon" width="21" height="14">
         <use href="../img/SVG/symbol-defs.svg#icon-menu-ham"></use>
       </svg>
     </button>
+
     <div class="mobile-menu js-menu-container">
       <div class="container mobile-menu-container">
         <button class="mobile-menu-close-btn js-close-menu">
@@ -403,7 +402,7 @@
     </div>
 </section>
     <section class="our-products" id="our_products">
-    <div class="container">
+    <div class="our-products-container">
         <h3 class="title">Our <span class="span">products</span></h3>
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -509,7 +508,7 @@
         </div>
     </div>
 </section>
-    <section class="container-top-seller" id="top_sellers">
+    <section id="top_sellers">
   <div class="container-top-seller">
     <h3 class="hero-text-top-seller">
       <span class="hero-span-top-seller">TOP</span> SELLERS
@@ -573,11 +572,11 @@
         called Cacao. Cacao has been around for thousands of years and was first
         discovered by the Native American tribe called the Mayans.
       </p>
-      <button type="button" class="btt-top-seller">Buy now</button>
+      <button type="button" class="btt-top-seller js-open-modal" data-modal="1">Buy now</button>
     </div>
   </div>
 </section>
-    <section class="reviews" id="choco_lov">
+    <section class="reviews" id="choco_love">
     <div class="reviews-conteiner">
         <h1 class="reviews-title">CHOCOLATE <span>IS LOVED</span></h1>
         <ul class="reviews-list ul">
@@ -634,7 +633,7 @@
 </section>
     <section class="subscribe">
 
-    <div class="conteiner sub-conteiner">
+    <div class="sub-conteiner">
         <h2 class="subscribe-title">EXPLORE OUR NEW <br>CHOCOLATE FIRST</h2>
         <p class="subscribe-text">From the velvety texture to the rich and complex flavor, our New Chocolate is a true
             indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the
@@ -642,45 +641,9 @@
 
         <button class="subscribe-button js-open-modal" type="button" data-modal="5">Subscribe</button>
     </div>
-
-    <div class="subscribe-modal is-hidden" data-modal="5">
-
-        <picture>
-            <source srcset="../img/desktop+tablet/modal-new-chocolate/newChoco-desk+tab-1x.jpg 1x, 
-                    ../img/desktop+tablet/modal-new-chocolate/newChoco-desk+tab-2x.jpg 2x" media="(min-width:768px)">
-
-            <source srcset="../img/mobile/modal-new-chocolate/newChoco-mobile-1x.jpg 1x, 
-                    ../img/mobile/modal-new-chocolate/newChoco-mobile-2x.jpg 2x" media="(max-width:768px)">
-
-            <img class="subscribe-pic" src="../img/desktop+tablet/modal-new-chocolate/newChoco-desk+tab-1x.jpg"
-                alt="Chocolate" height="196">
-        </picture>
-
-
-        <button class="sub-close-btn js-modal-close" type="button">
-            <svg class="sub-close-icon" width="28" height="28">
-                <use href="../img/SVG/symbol-defs.svg#icon-x-close"></use>
-            </svg>
-        </button>
-        <div class="explore-form">
-            <h1 class="sub-title">EXPLORE OUR<br> <span class="sub-title-part">NEW CHOCOLATE</span> FIRST! </h1>
-            <form action="#" class="contact-form">
-
-                <div class="modal-form-field">
-                    <label class="input-title" for="email"></label>
-                    <span class="modal-input-wrapper">
-                        <input type="email" class="modal-input" id="email" name="Email" required
-                            placeholder="Enter your email">
-                    </span>
-
-                    <button type="submit" class="modal-btn">Submit</button>
-                </div>
-            </form>
-        </div>
-    </div>
 </section>
     <!-- MODAL WINDOW -->
-    <div class="buy-now-modal" data-modal="1">
+    <div class="buy-now-modal modal" data-modal="1">
   <svg class="buy-now-close js-modal-close" width="24" height="24">
     <use href="../img/SVG/symbol-defs.svg#icon-buy-now-close"></use>
   </svg>
@@ -750,13 +713,13 @@
     </button>
   </form>
 </div>
-<div class="overlay js-overlay-modal"></div>
-    <div class="modal" data-modal="3">
+
+    <div class="leave-modal modal" data-modal="3">
   <svg class="leave-review-close-icon js-modal-close" width="24" height="24">
-    <use href="../img/SVG/symbol-defs.svg#icon-x-close"></use>
+    <use href="../img/SVG/symbol-defs.svg#icon-buy-now-close"></use>
   </svg>
   <h2 class="leave-review-title">
-    leave a review about
+    leave a review <br> about
     <span class="leave-review-title-our"> our chocolate</span>
   </h2>
   <form class="leave-review-form">
@@ -769,8 +732,7 @@
       </div>
 
       <span class="leave-review-form-wrapper">
-        <input type="tel" name="user_tel" class="leave-review-form-input leave-review-tel-input" required
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number" />
+        <input type="tel" name="user_tel" class="leave-review-form-input leave-review-tel-input"  placeholder="Phone number" />
         <svg class="leave-review-flag" width="24" height="18">
           <use href="../img/SVG/symbol-defs.svg#icon-flag"></use>
         </svg>
@@ -781,13 +743,45 @@
         <textarea class="leave-review-comment" name="comment" id="comment" placeholder="Enter text"></textarea>
       </div>
     </div>
-    <button type="submit" class="leave-review-submit-btn">Send</button>
+    <button type="submit" class="leave-review-submit-btn js-open-modal" data-modal="4">Send</button>
   </form>
 </div>
+    <div class="subscribe-modal modal" data-modal="5">
 
-<div class="overlay js-overlay-modal"></div>
-    
-    <div class="thanks-buy-modal" data-modal="2">
+    <picture>
+        <source srcset="../img/desktop+tablet/modal-new-chocolate/newChoco-desk+tab-1x.jpg 1x, 
+                    ../img/desktop+tablet/modal-new-chocolate/newChoco-desk+tab-2x.jpg 2x" media="(min-width:768px)">
+
+        <source srcset="../img/mobile/modal-new-chocolate/newChoco-mobile-1x.jpg 1x, 
+                    ../img/mobile/modal-new-chocolate/newChoco-mobile-2x.jpg 2x" media="(max-width:768px)">
+
+        <img class="subscribe-pic" src="../img/desktop+tablet/modal-new-chocolate/newChoco-desk+tab-1x.jpg"
+            alt="Chocolate" height="196">
+    </picture>
+
+
+    <button class="sub-close-btn js-modal-close" type="button">
+        <svg class="sub-close-icon" width="28" height="28">
+            <use href="../img/SVG/symbol-defs.svg#icon-x-close"></use>
+        </svg>
+    </button>
+    <div class="explore-form">
+        <h1 class="sub-title">EXPLORE OUR<br> <span class="sub-title-part">NEW CHOCOLATE</span> FIRST! </h1>
+        <form action="#" class="contact-form">
+
+            <div class="modal-form-field">
+                <label class="input-title" for="email"></label>
+                <span class="modal-input-wrapper">
+                    <input type="email" class="modal-input" id="email" name="Email" required
+                        placeholder="Enter your email">
+                </span>
+
+                <button type="submit" class="modal-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+    <div class="thanks-buy-modal modal" data-modal="2">
   <svg class="thanks-buy-close js-modal-close" width="28" height="28">
     <use href="../img/SVG/symbol-defs.svg#icon-buy-thanks-close"></use>
   </svg>
@@ -799,7 +793,7 @@
   </p>
 </div>
 <div class="overlay js-overlay-modal"></div>
-    <div class="modal" data-modal="4">
+    <div class="thank-feedback-modal modal" data-modal="4">
     <svg class="thank-feedback-close-icon js-modal-close" width="28" height="28">
         <use href="../img/SVG/symbol-defs.svg#icon-x-round-close"></use>
     </svg>
@@ -810,7 +804,7 @@
     </h2>
     <p class="thank-feedback-text">We are so happy to hear from you!</p>
 </div>
-<div class="overlay js-overlay-modal"></div>
+
   </main>
 
   <!-- Serhiy Panchyshyn -->
