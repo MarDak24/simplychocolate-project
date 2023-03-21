@@ -1,3 +1,9 @@
+video {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
 .how-made-container {
   max-width: 365px;
   padding-left: 15px;
@@ -68,7 +74,7 @@
   .how-made-video {
     width: 100%;
   }
-    .howe-made-video-i {
+  .howe-made-video-i {
     margin-bottom: 20px;
   }
 
@@ -124,7 +130,6 @@
   .howe-made-video-i {
     margin-bottom: 20px;
   }
-
 
   .how-made-text-decoration {
     padding: 32px;
