@@ -227,6 +227,8 @@
     margin-top: 22px;
   }
   .swiper-modal.buy {
+    max-width: 231px;
+    margin: 0 auto;
     position: relative;
     padding-bottom: 45px;
     text-align: center;
@@ -234,7 +236,6 @@
   }
 
   .swiper-wrapper.buy {
-    gap: 40px;
   }
 
   .swiper-modal.buy .swiper-slide.buy {

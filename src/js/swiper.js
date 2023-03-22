@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper', {
     disableOnInteraction: false,
   },
   //відступ між слайдами
-  spaseBetween: 18,
+  spaceBetween: 18,
   pagination: {
     el: '.swiper-pagination',
     clickable: true, // что-бы сделать пагинацию кликабельной

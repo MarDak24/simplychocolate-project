@@ -1,7 +1,7 @@
 .header-container {
-  max-width: 375px;
+  max-width: 365px;
   width: 100%;
-  padding: 20px 20px 14px 20px;
+  padding: 20px 15px 14px 15px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -170,6 +170,9 @@
   margin-bottom: 24px;
 }
 
+.mob-menu-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .mob-menu-link:is(:hover, :focus) {
   color: #fd9222;
 }
@@ -188,6 +191,7 @@
 .mob-menu-soc-icon {
   stroke: #fff;
   fill: none;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-menu-soc-list {
@@ -202,8 +206,8 @@
 
 @media screen and (min-width: 768px) {
   .header-container {
-    max-width: 768px;
-    padding: 24px 32px;
+    max-width: 734px;
+    padding: 24px 15px;
   }
 
   .menu-open-icon {
@@ -244,9 +248,8 @@
   }
 
   .header-container {
-    max-width: 1200px;
-    padding: 24px 32px 32px 32px;
-  
+    max-width: 1166px;
+    padding: 24px 15px 32px 15px;
   }
 
   .header-logo {

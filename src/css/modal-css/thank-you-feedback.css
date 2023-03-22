@@ -29,7 +29,7 @@
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .thanks-buy-modal {
+  .thank-feedback-modal {
     background-image: url(../../img/mobile/modal-thankYou/choco-thank-feedback-mobile-2x.png);
   }
 }
@@ -64,7 +64,6 @@
   color: #ffffff;
 }
 
-
 /* --------------Optimization------------ */
 @media screen and (min-width: 375px) {
 }
@@ -85,7 +84,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .thanks-buy-modal {
+    .thank-feedback-modal {
       background-image: url(../../img/desktop+tablet/modal-thankYou/choco-thank-feedback-tablet-2x.png);
     }
   }

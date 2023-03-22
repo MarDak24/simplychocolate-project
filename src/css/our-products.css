@@ -31,9 +31,7 @@
   text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  max-width: 270px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 335px;
 }
 .foto {
   display: flex;
@@ -98,7 +96,7 @@
 }
 @media screen and (min-width: 768px) {
   .our-products-container {
-    max-width: 1166px;
+    max-width: 734px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -111,12 +109,15 @@
     margin-bottom: 50px;
   }
   .content {
+    max-width: 704px;
     padding-top: 32px;
-    margin-left: 33px;
-    margin-right: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
+    .our-products-container {
+    max-width: 1166px;
+  }
+
   .our-products {
     padding-bottom: 128px;
   }
@@ -126,6 +127,7 @@
     margin-bottom: 50px;
   }
   .content {
+    max-width: 1136px;
     padding-top: 33px;
   }
 }

@@ -5,6 +5,9 @@
   --dark-color: #111111;
   --background-body: #e2e2e2;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: var(--dark-color);

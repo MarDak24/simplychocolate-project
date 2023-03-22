@@ -1,18 +1,23 @@
 /*_____________________________MODAL-WINDOW(NEW CHOCOLATE)________________________*/
-  .subscribe-modal {
-    z-index: 50;
+.subscribe-modal {
+  z-index: 50;
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 538px;
-    height: auto;
-    background-color: #fcfcfc;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-      0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    position: absolute;
-  }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 538px;
+  height: auto;
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: absolute;
+}
+
+.modal-btn {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media screen and (max-width: 767px) {
   .subscribe-modal {
     width: 311px;

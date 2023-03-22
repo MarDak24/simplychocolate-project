@@ -107,8 +107,20 @@
   gap: 18px;
 }
 
+.f-menu-item,
+.contacts-list-item,
+.footer-social-icon{
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.f-menu-item:hover,
+.f-menu-item:focus,
+.contacts-list-item:hover,
+.contacts-list-item:focus {
+  color: var(--orange-color);
+}
 .f-menu-anchor {
   position: relative;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .f-menu-anchor:hover,

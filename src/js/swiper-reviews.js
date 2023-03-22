@@ -1,5 +1,7 @@
 const swiper = new Swiper('.swiper-r', {
   slidesPerView: 1,
+  spaceBetween: 16,
+
   autoplay: {
     delay: 2000,
     disableOnInteraction: false,
@@ -14,14 +16,14 @@ const swiper = new Swiper('.swiper-r', {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaseBetween: 16,
+      spaceBetween: 16,
     },
     1200: {
       slidesPerView: 3,
-      spaseBetween: 20,
+      spaceBetween: 20,
     },
-    },
-  
+  },
+
   on: {
     init() {
       this.el.addEventListener('mouseenter', () => {
