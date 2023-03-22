@@ -30,7 +30,8 @@
   gap: 6px;
   color: #111111;
 }
-.title {
+
+.header-logo-italic {
   font-style: italic;
 }
 
@@ -42,6 +43,7 @@
   text-transform: uppercase;
   font-style: italic;
 }
+
 .header-list {
   font-style: normal;
   font-weight: 500;
