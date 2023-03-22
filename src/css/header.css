@@ -1,7 +1,7 @@
 .header-container {
-  max-width: 365px;
+  max-width: 375px;
   width: 100%;
-  padding: 15px 15px 14px 15px;
+  padding: 20px 20px 14px 20px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -30,7 +30,8 @@
   gap: 6px;
   color: #111111;
 }
-.title {
+
+.header-logo-italic {
   font-style: italic;
 }
 
@@ -42,6 +43,7 @@
   text-transform: uppercase;
   font-style: italic;
 }
+
 .header-list {
   font-style: normal;
   font-weight: 500;
@@ -52,22 +54,27 @@
   letter-spacing: -0.02em;
   color: #111111;
 }
+
 .header-soc-list {
   display: flex;
   padding: 0;
   gap: 21px;
   margin: 0;
 }
+
 .header-soc-icon {
   stroke: #111111;
   fill: none;
 }
+
 .header-item {
   position: relative;
 }
+
 .header-item:is(:hover, :focus) {
   color: #fd9222;
 }
+
 .header-item:hover::after {
   content: '';
   position: absolute;
@@ -195,10 +202,10 @@
 
 @media screen and (min-width: 768px) {
   .header-container {
-    max-width: 734px;
-    width: 100%;
-    padding: 15px 15px 24px 15px;
+    max-width: 768px;
+    padding: 24px 32px;
   }
+
   .menu-open-icon {
     width: 32px;
     height: 32px;
@@ -231,20 +238,24 @@
   .menu-open {
     display: none;
   }
+
   .mobile-menu {
     display: none;
   }
+
   .header-container {
-    max-width: 1166px;
-    padding: 15px 15px 32px 15px;
-    margin: 0 auto;
+    max-width: 1200px;
+    padding: 24px 32px 32px 32px;
+  
   }
+
   .header-logo {
     font-size: 18px;
     line-height: 1.11;
     letter-spacing: -0.03em;
     gap: 6px;
   }
+
   .header-icon {
     width: 24px;
     height: 24px;
