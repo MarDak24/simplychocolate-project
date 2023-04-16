@@ -1,0 +1,64 @@
+:root {
+  --white-color: #fafafa;
+  --orange-color: #fd9222;
+  --dark-purple-color: #1e1823;
+  --dark-color: #111111;
+  --background-body: #e2e2e2;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--dark-color);
+  background-color: var(--background-body);
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
