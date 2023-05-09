@@ -1,0 +1,266 @@
+.header-container {
+  max-width: 365px;
+  width: 100%;
+  padding: 20px 15px 14px 15px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-icon {
+  fill: transparent;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+}
+
+.header-logo {
+  font-weight: 700;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  display: flex;
+  gap: 6px;
+  color: #111111;
+}
+
+.header-logo-italic {
+  font-style: italic;
+}
+
+.header-navigation {
+  display: flex;
+}
+
+.title {
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.header-list {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  gap: 24px;
+  padding: 0;
+  display: flex;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+
+.header-soc-list {
+  display: flex;
+  padding: 0;
+  gap: 21px;
+  margin: 0;
+}
+
+.header-soc-icon {
+  stroke: #111111;
+  fill: none;
+}
+
+.header-item {
+  position: relative;
+}
+
+.header-item:is(:hover, :focus) {
+  color: #fd9222;
+}
+
+.header-item:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--orange-color);
+  border-radius: 1px;
+}
+
+.header-soc-icon:is(:hover, :focus):is(:hover, :focus) {
+  stroke: #fd9222;
+}
+
+.mobile-menu {
+  position: fixed;
+  max-width: 220px;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  background-color: var(--dark-purple-color);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: transform 1s, visibility 1s, opacity 1s;
+  overflow-y: auto;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-open-icon {
+  stroke: black;
+}
+
+.menu-open {
+  display: block;
+  height: 100%;
+  z-index: 5;
+  background-color: transparent;
+}
+
+.mobile-menu-close-btn {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  padding: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+}
+
+.mobile-menu-close-icon:is(:hover, :focus) {
+  color: #fd9222;
+}
+
+.mobile-menu-container {
+  position: relative;
+  padding-top: 136px;
+  padding-left: 50px;
+  padding-right: 46px;
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mob-menu-list {
+  margin-bottom: auto;
+}
+
+.mob-menu-link {
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.mob-menu-item {
+  margin-bottom: 24px;
+}
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mob-menu-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-link:is(:hover, :focus) {
+  color: #fd9222;
+}
+
+.mob-menu-link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--orange-color);
+  border-radius: 1px;
+}
+
+.mob-menu-soc-icon {
+  stroke: #fff;
+  fill: none;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-soc-list {
+  display: flex;
+  gap: 21px;
+  margin-right: auto;
+}
+
+.mob-menu-soc-icon:is(:hover, :focus) {
+  stroke: #fd9222;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    max-width: 734px;
+    padding: 24px 15px;
+  }
+
+  .menu-open-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .mobile-menu {
+    max-width: 290px;
+    right: 0;
+  }
+
+  .mobile-menu-container {
+    padding-left: 85px;
+    padding-right: 81px;
+  }
+
+  .mobile-menu-close-btn {
+    top: 24px;
+    right: 32px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-list,
+  .header-soc-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-open {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .header-container {
+    max-width: 1166px;
+    padding: 24px 15px 32px 15px;
+  }
+
+  .header-logo {
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+    gap: 6px;
+  }
+
+  .header-icon {
+    width: 24px;
+    height: 24px;
+  }
+}

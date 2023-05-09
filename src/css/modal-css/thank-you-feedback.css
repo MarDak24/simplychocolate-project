@@ -1,0 +1,105 @@
+.thank-feedback-modal {
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1130;
+
+  width: 100%;
+  max-width: 311px;
+
+  padding-top: 84px;
+  padding-right: 24px;
+  padding-bottom: 178px;
+  padding-left: 58px;
+
+  border-radius: 15px;
+  background-color: #fd9222;
+  transition: 0.3s all;
+
+  background-image: url(../../img/mobile/modal-thankYou/choco-thank-feedback-mobile-1x.png);
+  background-repeat: no-repeat;
+  background-size: 283px, 394px;
+  background-position: left bottom;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .thank-feedback-modal {
+    background-image: url(../../img/mobile/modal-thankYou/choco-thank-feedback-mobile-2x.png);
+  }
+}
+
+.thank-feedback-close-icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+}
+
+.thank-feedback-title {
+  display: inline-block;
+  margin-bottom: 8px;
+  text-align: left;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fcf1e0;
+}
+
+.thank-feedback-text {
+  text-align: left;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+/* --------------Optimization------------ */
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+  .thank-feedback-modal {
+    text-align: left;
+    max-width: 516px;
+
+    padding-top: 163px;
+    padding-right: 49px;
+    padding-bottom: 163px;
+    padding-left: 170px;
+
+    background-image: url(../../img/desktop+tablet/modal-thankYou/choco-thank-feedback-tablet-1x.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .thank-feedback-modal {
+      background-image: url(../../img/desktop+tablet/modal-thankYou/choco-thank-feedback-tablet-2x.png);
+    }
+  }
+  .thank-feedback-close-icon {
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+  }
+  .thank-feedback-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .thank-feedback-text {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}

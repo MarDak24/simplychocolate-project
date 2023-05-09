@@ -1,0 +1,223 @@
+.leave-modal {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 50;
+
+  width: 100%;
+  max-width: 311px;
+  height: auto;
+  padding-top: 32px;
+  padding-right: 24px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+
+  /* background-color: #FD9222; */
+  transition: 0.3s all;
+
+  background: #fafafa;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.leave-review-close-icon {
+  stroke: black;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+}
+
+.leave-review-title {
+  display: inline-block;
+  width: 255px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+}
+.leave-review-title-our {
+  color: #fd9222;
+}
+.leave-review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.leave-review-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 32px;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+.leave-review-wrap {
+  /* margin-bottom: 8px; */
+  position: relative;
+  width: 100%;
+}
+.leave-review-input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 14px 18px;
+  /* gap: 40px; */
+
+  width: 263px;
+  /* height: 45px; */
+
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+}
+.leave-review-form-wrapper {
+  display: block;
+  position: relative;
+}
+.leave-review-form-input {
+  width: 100%;
+  height: 45px;
+  padding-left: 18px;
+
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #111;
+  /* background-color: transparent; */
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+}
+.leave-review-tel-input {
+  padding-left: 106px;
+}
+.leave-review-flag {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translate(0%, -50%);
+}
+.leave-review-country {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translate(0%, -50%);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #000000;
+  letter-spacing: -0.02em;
+  padding-right: 8px;
+  box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.leave-review-comment {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 14px 18px;
+  gap: 40px;
+
+  width: 263px;
+  height: 91px;
+  font-size: 14px;
+
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  /* filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03)); */
+  border-radius: 8px;
+  resize: none;
+}
+.leave-review-submit-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 28px;
+  gap: 14px;
+  width: 93px;
+  height: 41px;
+  background: #fd9222;
+  border-radius: 100px;
+  color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.leave-review-submit-btn:is(:hover, :focus) {
+  background-color: #fcf1e0;
+  color: var(--orange-color);
+}
+
+/* --------------Optimization------------ */
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+  .leave-modal {
+    max-width: 517px;
+    padding: 40px;
+    min-height: 631px;
+  }
+  .leave-review-close-icon {
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+  }
+  .leave-review-title {
+    width: 298px;
+
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .leave-review-form {
+    width: 437px;
+    /* height: 327px; */
+  }
+  .leave-review-inputs {
+    gap: 19px;
+    margin-top: 40px;
+    /* width: 437px; */
+  }
+  .leave-review-input {
+    width: 437px;
+    height: 66px;
+    padding: 14px 18px;
+    font-size: 18px;
+  }
+
+  .leave-review-form-wrapper {
+    width: 437px;
+  }
+  .leave-review-form-input {
+    font-size: 18px;
+    height: 66px;
+  }
+  .leave-review-tel-input {
+    padding-left: 177px;
+  }
+  .leave-review-flag {
+    left: 24px;
+    width: 32px;
+    height: 24px;
+  }
+  .leave-review-country {
+    left: 74px;
+    font-size: 18px;
+    padding-right: 32px;
+  }
+
+  .leave-review-comment {
+    width: 437px;
+    height: 137px;
+    font-size: 18px;
+  }
+  .leave-review-submit-btn {
+    padding: 14px 40px;
+    width: 117px;
+    height: 45px;
+  }
+}

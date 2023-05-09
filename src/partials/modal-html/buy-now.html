@@ -1,0 +1,123 @@
+<div class="modal-wrapper modal" data-modal="1">
+  <div class="buy-now-modal">
+    <svg class="buy-now-close js-modal-close" width="24" height="24">
+      <use href="./img/SVG/symbol-defs.svg#icon-buy-now-close"></use>
+    </svg>
+
+    <h2 class="buy-now-title">
+      buy <span class="buy-now-title-part">now</span>
+    </h2>
+    <div class="swiper-modal buy">
+      <div class="swiper-wrapper buy">
+        <div class="swiper-slide buy">
+          <div class="content buy">
+            <div class="foto">
+              <img src="img/mobile/modal-by-now/by100g-mobile-1x.jpg"
+                srcset="./img/mobile/modal-by-now/by100g-mobile-1x.jpg 1x,
+                 ./img/mobile/modal-by-now/by100g-mobile-2x.jpg 2x"
+                class="buy-now-image" width="167" height="148" alt="wieght of 100 gramm" />
+            </div>
+            <p class="buy-now-item-desc">100 g</p>
+          </div>
+        </div>
+        <div class="swiper-slide buy">
+          <div class="content buy">
+            <div class="foto">
+              <img src="./img/mobile/modal-by-now/by200g-mobile-1x.jpg"
+                srcset="./img/mobile/modal-by-now/by200g-mobile-1x.jpg 1x, 
+                ./img/mobile/modal-by-now/by200g-mobile-2x.jpg 2x"
+                class="buy-now-image" width="167" height="148" alt="wieght of 200 gramm" />
+            </div>
+            <p class="buy-now-item-desc">200 g</p>
+          </div>
+        </div>
+        <div class="swiper-slide buy">
+          <div class="content buy">
+            <div class="foto">
+              <img src="./img/mobile/modal-by-now/by300g-mobile-1x.jpg"
+                srcset="./img/mobile/modal-by-now/by300g-mobile-1x.jpg 1x,
+                 ./img/mobile/modal-by-now/by300g-mobile-2x.jpg 2x"
+                class="buy-now-image" width="167" height="148" alt="wieght of 100 gramm" />
+            </div>
+            <p class="buy-now-item-desc">300 g</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination-modal buy"></div>
+    </div>
+
+    <ul class="buy-now-list no-mobile-list">
+      <li class="buy-now-item">
+        <img src="./img/mobile/modal-by-now/by100g-mobile-1x.jpg" srcset="
+            ./img/mobile/modal-by-now/by100g-mobile-1x.jpg 1x,
+            ./img/mobile/modal-by-now/by100g-mobile-2x.jpg 2x
+          " class="buy-now-image" width="167" height="148" alt="wieght of 100 gramm" />
+        <p class="buy-now-item-desc">100 g</p>
+      </li>
+      <li class="buy-now-item">
+        <img src="./img/mobile/modal-by-now/by200g-mobile-1x.jpg" srcset="
+            ./img/mobile/modal-by-now/by200g-mobile-1x.jpg 1x,
+            ./img/mobile/modal-by-now/by200g-mobile-2x.jpg 2x
+          " class="buy-now-image" width="167" height="148" alt="wieght of 200 gramm" />
+        <p class="buy-now-item-desc">200 g</p>
+      </li>
+      <li class="buy-now-item">
+        <img src="./img/mobile/modal-by-now/by300g-mobile-1x.jpg" srcset="
+            ./img/mobile/modal-by-now/by300g-mobile-1x.jpg 1x,
+            ./img/mobile/modal-by-now/by300g-mobile-2x.jpg 2x
+          " class="buy-now-image" width="167" height="148" alt="wieght of 100 gramm" />
+        <p class="buy-now-item-desc">300 g</p>
+      </li>
+    </ul>
+
+    <!-- Форма -->
+    <form class="buy-modal-form">
+      <div class="name-field">
+        <label class="buy-modal-form-field">
+          <span class="buy-modal-form-des">Personal information</span>
+          <input type="text" name="user_name" class="buy-modal-form-input" required pattern="^[a-zA-z]+" minlength="2"
+            placeholder="Name" />
+        </label>
+        <label class="buy-modal-form-field">
+          <input type="text" name="user_surname" class="buy-modal-form-input" required pattern="^[a-zA-z]+"
+            minlength="2" placeholder="Surname" />
+        </label>
+      </div>
+
+      <label class="buy-modal-form-field">
+        <span class="buy-modal-form-des">Email</span>
+        <input type="email" name="user_mail" class="buy-modal-form-input" required pattern=""
+          placeholder="Enter your email" />
+      </label>
+      <label class="buy-modal-form-field">
+        <span class="buy-modal-form-des">Phone number</span>
+        <span class="form-wrapper">
+          <input type="tel" name="user_tel" class="buy-modal-form-input tel-input" required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number" />
+          <svg class="modal-form-icon" width="24" height="18">
+            <use href="./img/SVG/symbol-defs.svg#icon-Frame"></use>
+          </svg>
+          <span class="modal-form-icon-mob">+380</span>
+        </span>
+      </label>
+      <label class="buy-modal-form-field">
+        <span class="buy-modal-form-des">Card number</span>
+        <span class="form-wrapper">
+          <input type="text" name="user_card" class="buy-modal-form-input" maxlength="16" placeholder="Enter card" />
+          <svg class="modal-form-icon-card" width="32" height="21">
+            <use href="./img/SVG/symbol-defs.svg#icon-Mastercard"></use>
+          </svg>
+        </span>
+      </label>
+
+      <label class="buy-modal-form-field">
+        <span class="buy-modal-form-des">Comment</span>
+        <textarea class="buy-modal-form-input buy-modal-message" name="user_message"
+          placeholder="Enter text"></textarea>
+      </label>
+      <button type="submit" class="btn-open-thank-you js-modal-close js-open-modal" data-modal="2">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
